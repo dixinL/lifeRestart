@@ -2486,7 +2486,7 @@
             "SPR": 1
         },
         "include": "(STR>5)&(EVT?[10009])",
-        "exclude": "(TLT?[1048])|(EVT?[10294])",
+        "exclude": "()|(EVT?[10294])",
         "branch": [
             "EVT?[10009]:10000"
         ]
@@ -2720,17 +2720,20 @@
             "STR": 3,
             "SPR": 2
         },
-        "include": "TLT?[1048]",
-        "exclude": "EVT?[10323]"
+        "include": "",
+        "exclude": ""
     },
     "10324": {
         "id": 10324,
         "event": "练气。",
-        "postEvent": "体质提升。",
+        "postEvent": "全方位提升。",
         "effect": {
-            "STR": 1
+            "CHR": 5,
+            "INT": 6,
+            "STR": 9,
+            "SPR": 4
         },
-        "include": "TLT?[1048]",
+        "include": "",
         "exclude": "EVT?[10333]"
     },
     "10325": {
@@ -2739,7 +2742,7 @@
         "effect": {
             "STR": 1
         },
-        "include": "(EVT?[10323])&(STR>10)&(TLT?[1048])",
+        "include": "(EVT?[10323])&(STR>10)&()",
         "exclude": "EVT?[10325]"
     },
     "10326": {
@@ -2748,7 +2751,7 @@
         "effect": {
             "STR": 1
         },
-        "include": "(EVT?[10325])&(STR>12)&(TLT?[1048])",
+        "include": "(EVT?[10325])&(STR>12)&()",
         "exclude": "EVT?[10326]"
     },
     "10327": {
@@ -2757,7 +2760,7 @@
         "effect": {
             "STR": 1
         },
-        "include": "(EVT?[10326])&(STR>15)&(TLT?[1048])",
+        "include": "(EVT?[10326])&(STR>15)&()",
         "exclude": "EVT?[10327]"
     },
     "10328": {
@@ -2766,7 +2769,7 @@
         "effect": {
             "STR": 1
         },
-        "include": "(EVT?[10327])&(STR>20)&(TLT?[1048])",
+        "include": "(EVT?[10327])&(STR>20)&()",
         "exclude": "EVT?[10328]"
     },
     "10329": {
@@ -2775,7 +2778,7 @@
         "effect": {
             "STR": 1
         },
-        "include": "(EVT?[10328])&(STR>25)&(TLT?[1048])",
+        "include": "(EVT?[10328])&(STR>25)&()",
         "exclude": "EVT?[10329]"
     },
     "10330": {
@@ -2784,7 +2787,7 @@
         "effect": {
             "STR": 1
         },
-        "include": "(EVT?[10329])&(STR>30)&(TLT?[1048])",
+        "include": "(EVT?[10329])&(STR>30)&()",
         "exclude": "EVT?[10330]"
     },
     "10331": {
@@ -2793,7 +2796,7 @@
         "effect": {
             "STR": 1
         },
-        "include": "(EVT?[10330])&(STR>38)&(TLT?[1048])",
+        "include": "(EVT?[10330])&(STR>38)&()",
         "exclude": "EVT?[10331]"
     },
     "10332": {
@@ -2802,7 +2805,7 @@
         "effect": {
             "STR": 1
         },
-        "include": "(EVT?[10331])&(STR>50)&(TLT?[1048])",
+        "include": "(EVT?[10331])&(STR>50)&()",
         "exclude": "EVT?[10332]"
     },
     "10333": {
@@ -2813,7 +2816,7 @@
             "INT": 1,
             "STR": 10
         },
-        "include": "(EVT?[10332])&(STR>100)&(TLT?[1048])",
+        "include": "(EVT?[10332])&(STR>100)&()",
         "exclude": "EVT?[10333]"
     },
     "10334": {
@@ -2822,7 +2825,7 @@
         "effect": {
             "STR": 10
         },
-        "include": "TLT?[1048]"
+        "include": ""
     },
     "10335": {
         "id": 10335,
@@ -2830,16 +2833,19 @@
         "effect": {
             "STR": 20
         },
-        "include": "TLT?[1048]"
+        "include": ""
     },
     "10336": {
         "id": 10336,
         "event": "锻体。",
         "postEvent": "体质提升。",
         "effect": {
-            "STR": 2
+            "CHR": 3,
+            "INT": 5,
+            "STR": 7,
+            "SPR": 4
         },
-        "include": "(EVT?[10333])&(STR>100)&(TLT?[1048])",
+        "include": "(EVT?[10333])&(STR>100)&()",
         "exclude": "EVT?[10345,10361]"
     },
     "10337": {
@@ -2848,7 +2854,7 @@
         "effect": {
             "STR": 2
         },
-        "include": "(EVT?[10333])&(STR>120)&(TLT?[1048])",
+        "include": "(EVT?[10333])&(STR>120)&()",
         "exclude": "EVT?[10337]"
     },
     "10338": {
@@ -2857,7 +2863,7 @@
         "effect": {
             "STR": 2
         },
-        "include": "(EVT?[10337])&(STR>140)&(TLT?[1048])",
+        "include": "(EVT?[10337])&(STR>140)&()",
         "exclude": "EVT?[10338]"
     },
     "10339": {
@@ -2866,7 +2872,7 @@
         "effect": {
             "STR": 2
         },
-        "include": "(EVT?[10338])&(STR>160)&(TLT?[1048])",
+        "include": "(EVT?[10338])&(STR>160)&()",
         "exclude": "EVT?[10339]"
     },
     "10340": {
@@ -2875,7 +2881,7 @@
         "effect": {
             "STR": 2
         },
-        "include": "(EVT?[10339])&(STR>190)&(TLT?[1048])",
+        "include": "(EVT?[10339])&(STR>190)&()",
         "exclude": "EVT?[10340]"
     },
     "10341": {
@@ -2884,7 +2890,7 @@
         "effect": {
             "STR": 2
         },
-        "include": "(EVT?[10340])&(STR>220)&(TLT?[1048])",
+        "include": "(EVT?[10340])&(STR>220)&()",
         "exclude": "EVT?[10341]"
     },
     "10342": {
@@ -2893,7 +2899,7 @@
         "effect": {
             "STR": 2
         },
-        "include": "(EVT?[10341])&(STR>250)&(TLT?[1048])",
+        "include": "(EVT?[10341])&(STR>250)&()",
         "exclude": "EVT?[10342]"
     },
     "10343": {
@@ -2902,7 +2908,7 @@
         "effect": {
             "STR": 2
         },
-        "include": "(EVT?[10342])&(STR>280)&(TLT?[1048])",
+        "include": "(EVT?[10342])&(STR>280)&()",
         "exclude": "EVT?[10343]"
     },
     "10344": {
@@ -2911,7 +2917,7 @@
         "effect": {
             "STR": 2
         },
-        "include": "(EVT?[10343])&(STR>320)&(TLT?[1048])",
+        "include": "(EVT?[10343])&(STR>320)&()",
         "exclude": "EVT?[10344]"
     },
     "10345": {
@@ -2922,7 +2928,7 @@
             "INT": 2,
             "STR": 20
         },
-        "include": "(EVT?[10344])&(STR>400)&(TLT?[1048])",
+        "include": "(EVT?[10344])&(STR>400)&()",
         "exclude": "EVT?[10345,10361]"
     },
     "10346": {
@@ -2931,7 +2937,7 @@
         "effect": {
             "LIF": -1
         },
-        "include": "TLT?[1048]",
+        "include": "",
         "exclude": "EVT?[10333,40001,40003,40061]",
         "branch": [
             "STR>0:10000"
@@ -2943,7 +2949,7 @@
         "effect": {
             "LIF": -1
         },
-        "include": "TLT?[1048]",
+        "include": "",
         "exclude": "EVT?[10345,10361,40001,40003,40061]",
         "branch": [
             "STR>0:10000"
@@ -2956,7 +2962,7 @@
             "INT": 1,
             "STR": 3
         },
-        "include": "(EVT?[10345,10361])&(STR>450)&(INT>10)&(TLT?[1048])",
+        "include": "(EVT?[10345,10361])&(STR>450)&(INT>10)&()",
         "exclude": "EVT?[10348]"
     },
     "10349": {
@@ -2966,7 +2972,7 @@
         "effect": {
             "STR": 100
         },
-        "include": "(EVT?[10333])&(CHR>10)&(TLT?[1048])",
+        "include": "(EVT?[10333])&(CHR>10)&()",
         "exclude": "EVT?[10349]"
     },
     "10350": {
@@ -2976,7 +2982,7 @@
         "effect": {
             "STR": 50
         },
-        "include": "(EVT?[10333])&(INT>10)&(TLT?[1048])"
+        "include": "(EVT?[10333])&(INT>10)&()"
     },
     "10351": {
         "id": 10351,
@@ -2984,7 +2990,7 @@
         "effect": {
             "STR": 5
         },
-        "include": "(EVT?[10333])&(STR>100)&(TLT?[1048])"
+        "include": "(EVT?[10333])&(STR>100)&()"
     },
     "10352": {
         "id": 10352,
@@ -2993,7 +2999,7 @@
             "INT": 1,
             "STR": 3
         },
-        "include": "(EVT?[10348])&(STR>500)&(INT>15)&(TLT?[1048])",
+        "include": "(EVT?[10348])&(STR>500)&(INT>15)&()",
         "exclude": "EVT?[10352]"
     },
     "10353": {
@@ -3003,7 +3009,7 @@
             "INT": 1,
             "STR": 3
         },
-        "include": "(EVT?[10352])&(STR>550)&(INT>20)&(TLT?[1048])",
+        "include": "(EVT?[10352])&(STR>550)&(INT>20)&()",
         "exclude": "EVT?[10353]"
     },
     "10354": {
@@ -3013,7 +3019,7 @@
             "INT": 1,
             "STR": 3
         },
-        "include": "(EVT?[10353])&(STR>600)&(INT>30)&(TLT?[1048])",
+        "include": "(EVT?[10353])&(STR>600)&(INT>30)&()",
         "exclude": "EVT?[10354]"
     },
     "10355": {
@@ -3023,7 +3029,7 @@
             "INT": 1,
             "STR": 3
         },
-        "include": "(EVT?[10354])&(STR>650)&(INT>40)&(TLT?[1048])",
+        "include": "(EVT?[10354])&(STR>650)&(INT>40)&()",
         "exclude": "EVT?[10355]"
     },
     "10356": {
@@ -3033,7 +3039,7 @@
             "INT": 1,
             "STR": 3
         },
-        "include": "(EVT?[10355])&(STR>700)&(INT>50)&(TLT?[1048])",
+        "include": "(EVT?[10355])&(STR>700)&(INT>50)&()",
         "exclude": "EVT?[10356]"
     },
     "10357": {
@@ -3043,7 +3049,7 @@
             "INT": 1,
             "STR": 3
         },
-        "include": "(EVT?[10356])&(STR>750)&(INT>65)&(TLT?[1048])",
+        "include": "(EVT?[10356])&(STR>750)&(INT>65)&()",
         "exclude": "EVT?[10357]"
     },
     "10358": {
@@ -3053,13 +3059,13 @@
             "INT": 1,
             "STR": 3
         },
-        "include": "(EVT?[10357])&(STR>850)&(INT>80)&(TLT?[1048])",
+        "include": "(EVT?[10357])&(STR>850)&(INT>80)&()",
         "exclude": "EVT?[10358]"
     },
     "10359": {
         "id": 10359,
         "event": "你遭到元婴大能截杀。",
-        "include": "TLT?[1048]",
+        "include": "",
         "exclude": "EVT?[10359,10365]",
         "branch": [
             "STR>1000:10360",
@@ -3086,7 +3092,7 @@
             "STR": 500,
             "SPR": 1
         },
-        "include": "(EVT?[10344])&(TLT?[1048])&(TLT?[1065])",
+        "include": "(EVT?[10344])&()&(TLT?[1065])",
         "exclude": "EVT?[10361,10345]"
     },
     "10362": {
@@ -3094,10 +3100,12 @@
         "event": "蕴丹。",
         "postEvent": "体质、智力提升。",
         "effect": {
-            "INT": 1,
-            "STR": 3
+            "CHR": 6,
+            "INT": 4,
+            "STR": 7,
+            "SPR": 1
         },
-        "include": "(EVT?[10345,10361])&(STR>400)&(TLT?[1048])",
+        "include": "(EVT?[10345,10361])&(STR>400)&()",
         "exclude": "EVT?[10365]"
     },
     "10363": {
@@ -3108,7 +3116,7 @@
             "INT": 10,
             "STR": 100
         },
-        "include": "(EVT?[10345,10361])&(STR>450)&(INT>10)&(TLT?[1048])",
+        "include": "(EVT?[10345,10361])&(STR>450)&(INT>10)&()",
         "exclude": "EVT?[10363]"
     },
     "10364": {
@@ -3117,7 +3125,7 @@
         "effect": {
             "STR": 10
         },
-        "include": "(EVT?[10345,10361])&(STR>450)&(INT>10)&(TLT?[1048])"
+        "include": "(EVT?[10345,10361])&(STR>450)&(INT>10)&()"
     },
     "10365": {
         "id": 10365,
@@ -3126,7 +3134,7 @@
         "effect": {
             "INT": 30
         },
-        "include": "(EVT?[10358])&(STR>1000)&(INT>100)&(TLT?[1048])",
+        "include": "(EVT?[10358])&(STR>1000)&(INT>100)&()",
         "exclude": "EVT?[10365]"
     },
     "10366": {
@@ -3136,7 +3144,7 @@
             "INT": 10,
             "STR": 100
         },
-        "include": "(EVT?[10345,10361])&(STR>450)&(INT>10)&(TLT?[1048])"
+        "include": "(EVT?[10345,10361])&(STR>450)&(INT>10)&()"
     },
     "10367": {
         "id": 10367,
@@ -4174,14 +4182,14 @@
             "STR": 10,
             "SPR": 1
         },
-        "include": "TLT?[1048]",
+        "include": "",
         "exclude": "EVT?[10495]"
     },
     "10496": {
         "id": 10496,
         "event": "偶遇筑基期散修。",
         "postEvent": "他无视了你。",
-        "include": "TLT?[1048]",
+        "include": "",
         "exclude": "EVT?[10496,20409]",
         "branch": [
             "CHR<5:10497"
@@ -5301,7 +5309,7 @@
         "id": 10656,
         "event": "你因病医治无效去世。",
         "include": "EVT?[10011]",
-        "exclude": "TLT?[1048]",
+        "exclude": "",
         "branch": [
             "EVT?[10011]:10000"
         ]
@@ -5310,7 +5318,7 @@
         "id": 10657,
         "event": "你在睡梦中安然离世。",
         "include": "EVT?[10011]",
-        "exclude": "TLT?[1048]",
+        "exclude": "",
         "branch": [
             "EVT?[10011]:10000"
         ]
@@ -6179,7 +6187,7 @@
             "MNY": 1,
             "SPR": 1
         },
-        "include": "(INT>5)&(TLT?[1048])",
+        "include": "(INT>5)&()",
         "exclude": "EVT?[10787]",
         "branch": [
             "INT>13:10788"
@@ -6204,7 +6212,7 @@
         "effect": {
             "INT": 100
         },
-        "include": "(MNY>13)&(TLT?[1048])",
+        "include": "(MNY>13)&()",
         "exclude": "EVT?[10789]"
     },
     "10790": {
@@ -6375,7 +6383,7 @@
         "effect": {
             "STR": 20
         },
-        "include": "(CHR>13)&(TLT?[1048])",
+        "include": "(CHR>13)&()",
         "exclude": "EVT?[10816]"
     },
     "10817": {
@@ -6384,13 +6392,13 @@
         "effect": {
             "STR": 50
         },
-        "include": "TLT?[1048]",
+        "include": "",
         "exclude": "EVT?[10817]"
     },
     "10818": {
         "id": 10818,
         "event": "你和一位相同境界的人结为道侣。",
-        "include": "TLT?[1048]",
+        "include": "",
         "exclude": "EVT?[10818]"
     },
     "10819": {
@@ -6399,7 +6407,7 @@
         "effect": {
             "SPR": -1
         },
-        "include": "(TLT?[1048])&(EVT?[10818])",
+        "include": "()&(EVT?[10818])",
         "exclude": "EVT?[10819]"
     },
     "10820": {
@@ -6408,7 +6416,7 @@
         "effect": {
             "STR": -100
         },
-        "include": "TLT?[1048]"
+        "include": ""
     },
     "10821": {
         "id": 10821,
@@ -6416,7 +6424,7 @@
         "effect": {
             "STR": -10
         },
-        "include": "TLT?[1048]"
+        "include": ""
     },
     "10822": {
         "id": 10822,
@@ -9680,7 +9688,7 @@
         "id": 11310,
         "event": "你在睡梦中安然离世。",
         "include": "EVT?[10010]",
-        "exclude": "(EVT?[11310])|(TLT?[1048])",
+        "exclude": "(EVT?[11310])|()",
         "branch": [
             "EVT?[10010]:10000"
         ]
@@ -11136,7 +11144,7 @@
         "effect": {
             "STR": 10
         },
-        "include": "TLT?[1048]",
+        "include": "",
         "exclude": "EVT?[20323]"
     },
     "20332": {
@@ -11146,7 +11154,7 @@
         "effect": {
             "SPR": 1
         },
-        "include": "TLT?[1048]",
+        "include": "",
         "exclude": "EVT?[20332]",
         "branch": [
             "STR<88:10000"
@@ -11159,14 +11167,14 @@
             "INT": 10,
             "STR": 100
         },
-        "include": "(INT>9)&(TLT?[1048])",
+        "include": "(INT>9)&()",
         "exclude": "EVT?[20333]"
     },
     "20334": {
         "id": 20334,
         "event": "你参加一个宗派的入门大比。",
         "postEvent": "没有成功。",
-        "include": "TLT?[1048]",
+        "include": "",
         "exclude": "EVT?[20334]",
         "branch": [
             "STR>20:20335"
@@ -11334,7 +11342,10 @@
         "event": "你悟出了剑道。",
         "postEvent": "体质提升。",
         "effect": {
-            "STR": 50
+            "CHR": 4,
+            "INT": 3,
+            "STR": 9,
+            "SPR": 4
         },
         "include": "(EVT?[10365])&(INT>100)",
         "exclude": "EVT?[20380]"
@@ -11922,14 +11933,17 @@
             "STR": 5,
             "SPR": 3
         },
-        "include": "(TLT?[1048])&(EVT?[20461])",
+        "include": "()&(EVT?[20461])",
         "exclude": "EVT?[40001,40003]"
     },
     "40002": {
         "id": 40002,
         "event": "排出凡胎杂质。体质提升。",
         "effect": {
-            "STR": 5
+            "CHR": 30,
+            "INT": 30,
+            "STR": 30,
+            "SPR": 20
         },
         "include": "EVT?[40001,40003,40061]",
         "exclude": "EVT?[40010]"
@@ -12013,7 +12027,10 @@
         "id": 40011,
         "event": "无垢淬体。体质提升。",
         "effect": {
-            "STR": 10
+            "CHR": 30,
+            "INT": 30,
+            "STR": 30,
+            "SPR": 20
         },
         "include": "EVT?[40010]",
         "exclude": "EVT?[40023]"
